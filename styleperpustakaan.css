@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4fb;
+    color: #1e293b;
+    padding: 35px;
+}
+
+/* JUDUL */
+h1 {
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    color: #173b7a;
+    font-size: 30px;
+}
+
+/* SUB JUDUL */
+h2 {
+    color: #173b7a;
+    margin-bottom: 20px;
+}
+
+/* FORM TAMBAH */
+form {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e2e8f0;
+}
+
+/* LABEL */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* INPUT */
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form textarea,
+form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    background: #f8fafc;
+    transition: 0.2s;
+}
+
+/* FOCUS */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* TEXTAREA */
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* TOMBOL SIMPAN */
+form input[type="submit"],
+form button {
+    margin-top: 20px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* DAFTAR ANGGOTA */
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* HEADER TABEL */
+th {
+    background: #173b7a;
+    color: white;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* ISI TABEL */
+td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+/* BARIS */
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: #f4f8ff;
+}
+
+/* KEMBALI */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* TOMBOL KEMBALI */
+body > a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 11px 22px;
+    background: #64748b;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+body > a:hover {
+    background: #475569;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    body {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
+
+/* TOMBOL */
+button,
+input[type="submit"],
+a {
+    font-family: Arial, sans-serif;
+}
+
+/* Tombol Kembali */
+a.kembali,
+.kembali {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background: #1976d2;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+a.kembali:hover,
+.kembali:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+/* Semua tombol submit */
+input[type="submit"],
+button {
+    padding: 10px 22px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #0d47a1;
+}
+
+/* NOTIFIKASI PENGEMBALIAN */
+
+.notifikasi {
+    margin: 25px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.notifikasi h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.notifikasi p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.notifikasi table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.notifikasi th {
+    background: #1976d2;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.notifikasi td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notifikasi tr:hover {
+    background: #f5f5f5;
+}
+
+/* ==========================
+   STATUS PEMINJAMAN & PENGEMBALIAN
+========================== */
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-dipinjam {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-kembali {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-dipinjam {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-kembali {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* TOMBOL KEMBALI DASHBOARD */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #1e3a8a;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.user-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 8px 14px 8px 8px;
+    border-radius: 30px;
+    color: #172554;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.user-badge:hover {
+    background: #eff6ff;
+    transform: translateY(-2px);
+}
+
+.foto-navbar,
+.avatar-navbar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.foto-navbar {
+    object-fit: cover;
+}
+
+.avatar-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+}
+
+.panah-profil {
+    font-size: 24px;
+    color: #64748b;
+    margin-left: 3px;
+}
+
+.btn-kembali {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background: #2980b9;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.quick-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 24px;
+    min-height: 54px;
+    background: #3498db;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.quick-links a:hover {
+    background: #2471a3;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .quick-links a {
+        flex: 1 1 100%;
+        padding: 16px;
+        font-size: 16px;
+    }
+}
